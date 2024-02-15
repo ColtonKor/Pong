@@ -45,9 +45,7 @@ public class Paddle : MonoBehaviour
 
         if(other.gameObject.CompareTag("Ball")){
             audioPaddle.pitch = 1 + newSpeed/50;
-            audioPaddle.volume = newSpeed;
             audioPaddle.Play();
-            // audioPaddle.pitch = 1;
         }
 
         // Debug.DrawRay(Vector3.zero, Vector3.right, Color.red);
