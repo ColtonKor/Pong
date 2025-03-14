@@ -615,11 +615,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: 
+  cloudProjectId: 0f34a451-b736-4996-b973-d1bece5361a7
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: Pong 2025-03-05_23-10-43
+  organizationId: coltonkor
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
