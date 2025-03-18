@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
         rightWinner.SetActive(false);
         ballStartPos = ball.position;
         Rigidbody ballBody = ball.GetComponent<Rigidbody>();
-        ballBody.velocity = new Vector3(1f, 0f, 0f) * startSpeed;
+        ballBody.linearVelocity = new Vector3(1f, 0f, 0f) * startSpeed;
     }
 
     // If the ball entered the goal area, increment the score, check for win, and reset the ball
@@ -99,7 +99,7 @@ public class GameManager : MonoBehaviour
         newDirection = Quaternion.Euler(0f, Random.Range(-20f, 20f), 0f) * newDirection;
 
         var rbody = ball.GetComponent<Rigidbody>();
-        rbody.velocity = newDirection;
+        rbody.linearVelocity = newDirection;
         rbody.angularVelocity = new Vector3();
 
         // We are warping the ball to a new location, start the trail over

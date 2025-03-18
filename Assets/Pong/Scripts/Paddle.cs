@@ -41,7 +41,7 @@ public class Paddle : MonoBehaviour
         float newSpeed = currentVelocity.magnitude * collisionBallSpeedUp;
         Vector3 newVelocity = new Vector3(newSign, 0f, 0f) * newSpeed;
         newVelocity = Quaternion.Euler(0f, newRotSign * 60f * bounceDirection, 0f) * newVelocity;
-        other.rigidbody.velocity = newVelocity;
+        other.rigidbody.linearVelocity = newVelocity;
 
         if(other.gameObject.CompareTag("Ball")){
             audioPaddle.pitch = 1 + newSpeed/50;
